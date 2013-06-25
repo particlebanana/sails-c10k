@@ -1,7 +1,7 @@
 module.exports = {
 
 	// Port this Sails application will live on
-	port: process.env.PORT || 1337,
+	port: 80,
 
 	// The environment the app is deployed in
 	// (`development` or `production`)
