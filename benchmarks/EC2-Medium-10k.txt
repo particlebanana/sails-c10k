@@ -1,0 +1,62 @@
+Ubunutu 12.04 - 2 Medium Instances w/ Load Balancer
+AV Zone: us-east-1e
+Node: v0.10.12
+
+Estimated Price: $193.99
+
+ubuntu@ip-10-28-205-9:~$ ab -r -n 29000 -c 10000 http://sails-c10k-691960363.us-east-1.elb.amazonaws.com/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking sails-c10k-691960363.us-east-1.elb.amazonaws.com (be patient)
+Completed 2900 requests
+Completed 5800 requests
+Completed 8700 requests
+Completed 11600 requests
+Completed 14500 requests
+Completed 17400 requests
+Completed 20300 requests
+Completed 23200 requests
+Completed 26100 requests
+Completed 29000 requests
+Finished 29000 requests
+
+
+Server Software:
+Server Hostname:        sails-c10k-691960363.us-east-1.elb.amazonaws.com
+Server Port:            80
+
+Document Path:          /
+Document Length:        17 bytes
+
+Concurrency Level:      10000
+Time taken for tests:   57.679 seconds
+Complete requests:      29000
+Failed requests:        96
+   (Connect: 0, Receive: 32, Length: 32, Exceptions: 32)
+Write errors:           0
+Total transferred:      5619792 bytes
+HTML transferred:       492456 bytes
+Requests per second:    502.78 [#/sec] (mean)
+Time per request:       19889.246 [ms] (mean)
+Time per request:       1.989 [ms] (mean, across all concurrent requests)
+Transfer rate:          95.15 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1  969 1422.2    807   15110
+Processing:   478 8903 8946.2   4602   43818
+Waiting:        0 8840 8936.2   4582   43818
+Total:        761 9872 9053.0   5492   44854
+
+Percentage of the requests served within a certain time (ms)
+  50%   5492
+  66%   8079
+  75%  11858
+  80%  17703
+  90%  24888
+  95%  30326
+  98%  39753
+  99%  39826
+ 100%  44854 (longest request)
