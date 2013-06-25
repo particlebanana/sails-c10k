@@ -1,0 +1,20 @@
+{
+    "name": "c10k",
+    "private": true,
+    "version": "0.0.0",
+    "description": "a Sails application",
+    "dependencies": {
+        "sails": "git://github.com/balderdashy/sails.git#development",
+        "grunt": "0.4.1",
+        "optimist": "0.3.4",
+        "sails-memory": "0.1.0"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "debug": "node debug app.js"
+    },
+    "main": "app.js",
+    "repository": "",
+    "author": "",
+    "license": ""
+}
